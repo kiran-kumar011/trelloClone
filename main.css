@@ -1,0 +1,225 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  background-color: rgba(30, 144, 255, 0.6);
+  cursor: default; }
+
+a {
+  text-decoration: none; }
+
+.header {
+  background-color: dodgerblue;
+  box-sizing: border-box;
+  padding: 10px 5px;
+  vertical-align: center;
+  position: relative; }
+
+.homeIcon {
+  font-size: 15px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 3px;
+  margin: 5px; }
+
+.boardIcon {
+  font-size: 20px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.3);
+  opacity: 0.9;
+  padding: 0 5px;
+  margin: 5px; }
+  .boardIcon i {
+    color: white;
+    font-size: 18px; }
+  .boardIcon span {
+    font-size: 20px;
+    padding: 0 5px; }
+
+.search {
+  background: rgba(255, 255, 255, 0.1);
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 5px 10px; }
+  .search input {
+    height: 18px;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0; }
+  .search i {
+    color: white;
+    transform: rotate 10deg; }
+  .search input:focus {
+    outline: none; }
+
+.trello {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+  .trello i {
+    font-size: 27px;
+    color: rgba(255, 255, 255, 0.4); }
+  .trello h1 {
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.4);
+    letter-spacing: 1px; }
+
+.rightCorner {
+  color: white;
+  float: right;
+  transform: translate(-30%, -20%); }
+  .rightCorner i {
+    padding: 10px 10px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 3px; }
+
+.addListInput {
+  display: block; }
+
+h1 {
+  font-size: 30px;
+  font-style: italic;
+  color: white;
+  padding: 10px 20px; }
+  h1 .far {
+    font-size: 20px;
+    transform: translate(70%, -10%);
+    padding: 10px; }
+  h1 .far:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 10px; }
+
+.addListContainer {
+  margin: 10px 10px 10px 20px;
+  display: inline-block;
+  vertical-align: top; }
+  .addListContainer button {
+    background-color: rgba(30, 144, 255, 0.1);
+    width: 220px;
+    font-size: 20px;
+    color: white; }
+
+.addListContainer:hover {
+  background-color: dodgerblue;
+  cursor: pointer; }
+  .addListContainer:hover button {
+    text-decoration: underline; }
+
+.addListReplaced {
+  display: inline-block;
+  background-color: rgba(30, 144, 255, 0.3);
+  vertical-align: top;
+  margin: 10px 10px 10px 20px;
+  padding: 10px; }
+  .addListReplaced input:focus {
+    outline: none; }
+  .addListReplaced input {
+    border: 0;
+    margin: 0;
+    padding: 0px;
+    width: 200px;
+    height: 25px;
+    font-size: 16px;
+    color: dodgerblue; }
+  .addListReplaced ::-webkit-input-placeholder {
+    color: rgba(30, 144, 255, 0.4);
+    padding: 0 10px; }
+  .addListReplaced button {
+    width: 70px;
+    height: 30px;
+    font-size: 15px;
+    color: dodgerblue;
+    margin: 5px 0 0 0; }
+  .addListReplaced i {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    transform: translate(30%, 20%); }
+
+.addCard {
+  width: 220px;
+  display: inline-block;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 10px 10px 10px 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  vertical-align: top;
+  background-color: aliceblue; }
+  .addCard h2 {
+    font-size: 25px;
+    word-wrap: break-word;
+    padding: 10px; }
+  .addCard p {
+    padding: 3px 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+    margin-top: 2px; }
+  .addCard .addCardText {
+    vertical-align: top; }
+
+.addCardInput:focus {
+  outline: none; }
+
+.addCardText {
+  box-sizing: border-box; }
+  .addCardText .addCardInput {
+    width: 192px;
+    height: 17px;
+    font-size: 16px; }
+  .addCardText ::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.4);
+    padding: 0 10px; }
+  .addCardText button {
+    font-size: 16px; }
+  .addCardText span {
+    color: rgba(0, 0, 0, 0.5);
+    margin: 5px; }
+
+/*# sourceMappingURL=main.css.map */

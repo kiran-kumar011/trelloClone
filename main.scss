@@ -1,0 +1,275 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+// main body styling.
+
+// header styling
+body {
+  background-color: rgba(30,144,255,0.6);
+  cursor: default;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  background-color: rgba(30,144,255,01);
+  box-sizing: border-box;
+  padding: 10px 5px;
+  vertical-align: center;
+  position: relative;
+}
+.homeIcon {
+  font-size: 15px;
+  color: rgba(255,255,255,1);
+  background-color: rgba(255,255,255,0.3); 
+  padding: 3px;
+  margin: 5px;
+}
+
+.boardIcon  {
+  font-size: 20px;
+  color: rgba(255,255,255,1);
+  background-color: rgba(255,255,255,0.3);
+  opacity: 0.9;
+  padding: 0 5px;
+  margin: 5px;
+  i {
+    color: rgba(255,255,255,1);
+    font-size: 18px;
+    // padding: 0px 5px;
+  }
+  span {
+    font-size: 20px;
+    padding: 0 5px;
+  }
+}
+.search {
+  background: rgba(255,255,255,0.1);
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  input {
+    height: 18px;
+    background-color: transparent; 
+    border: 0;
+    margin: 0;
+    padding:0;
+  }
+  i {
+    color: rgba(255,255,255,1);
+    transform: rotate (10deg)
+  }
+  input:focus {
+    outline: none;
+  }
+}
+.trello {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  i {
+    font-size: 27px;
+    color: rgba(255,255,255,0.4);
+  }
+  h1 {
+    font-size: 30px;
+    color: rgba(255,255,255,0.4);
+    letter-spacing: 1px;
+    // margin-left: 10px; 
+  }
+}
+.rightCorner {
+  color: rgba(255,255,255,1);
+  float: right;
+  transform: translate(-30%, -20%);
+  i {
+    padding: 10px 10px;
+    font-size: 20px;
+    background-color: rgba(255,255,255,0.1);
+    margin: 3px;
+  }
+}
+
+
+
+// board styling.
+// board header.
+.addListInput {
+  display: block;
+}
+h1 {
+  // display: inline-block;
+  font-size: 30px;
+  font-style: italic;
+  color: rgba(255,255,255,1);
+  padding: 10px 20px;
+  .far {
+    font-size: 20px;
+    transform: translate(70%, -10%);
+    padding: 10px;
+  }
+  .far:hover {
+    background-color: rgba(255,255,255,0.3);
+    padding: 10px;
+  }
+}
+
+.addListContainer {
+  margin: 10px 10px 10px 20px;
+  display: inline-block;
+  vertical-align: top;
+  button {
+    background-color: rgba(30,144,255,0.1);
+    width: 220px;
+    font-size: 20px;
+    color: rgba(255,255,255,1);
+  }
+}
+.addListContainer:hover {
+  background-color: rgba(30,144,255,1);
+  cursor: pointer;
+  button {
+  text-decoration: underline;   
+  }
+}
+
+.addListReplaced {
+  display: inline-block;
+  background-color: rgba(30,144,255,0.3);
+  vertical-align: top;
+  margin: 10px 10px 10px 20px;
+  // border: 1px solid dodgerblue;
+  padding: 10px;
+  input:focus {
+    outline: none;
+  }
+  input {
+    border: 0;
+    margin: 0;
+    padding: 0px;
+    width: 200px;
+    height: 25px;
+    font-size: 16px;
+    color: rgba(30,144,255,1);
+  }
+  ::-webkit-input-placeholder {
+  color: rgba(30,144,255,0.4);
+  padding: 0 10px;
+  }
+  button {
+    width: 70px;
+    height: 30px;
+    font-size: 15px;
+    color: rgba(30,144,255,1);
+    margin: 5px 0 0 0;
+  }
+  i {
+    font-size: 22px;
+    color: rgba(0,0,0,0.5);
+    transform: translate(30%, 20%);
+  }
+}
+.addCard {
+  width: 220px;
+  display: inline-block;
+  border: 1px solid rgba(0,0,0,0.1);
+  margin: 10px 10px 10px 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  vertical-align: top;
+  background-color: rgba(240,248,255,1);
+  h2 {
+    font-size: 25px;
+    word-wrap: break-word;
+    padding: 10px;
+  }
+  p {
+    padding: 3px 5px;
+    border: 1px solid rgba(0,0,0,0.1);
+    word-wrap: break-word;
+    margin-top: 2px;
+  }
+  .addCardText {
+    vertical-align: top;
+  }
+}
+.addCardInput:focus {
+  outline: none;
+}
+
+.addCardText {
+  // background-color: red;
+  box-sizing: border-box;
+  .addCardInput {
+    width: 192px;
+    height: 17px;
+    font-size: 16px;
+  }
+  ::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.4);
+  padding: 0 10px;
+  }
+  button {
+    font-size: 16px;
+  }
+  span {
+    color: rgba(0,0,0,0.5);
+    margin: 5px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
